@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+        }
+        .icon{
+            width: 5.625rem;
+            height: 5.625rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .icon:hover >i{
+            scale: 1.2;
+            color: #f1f;
+        }
+        .icon::before{
+            background: var(--color);
+            content: "";
+            position: absolute;
+            width: 130%;
+            height: 130%;
+            left: -110%;
+            top: 80;
+            transform: rotate(45deg);
+
+        }
+        .icon:hover::before{
+            animation: slide 0.7s forwards;
+
+        }
+        @keyframes slide {
+            50%{
+                left: 10%;
+                top: -10%;
+
+            }
+            100%{
+                left: -0%;
+                top: -0%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+ 
+<div class="wrapper">
+<a href="#" class="icon"><i class="fa-brands fa-instagram"><img src="/PT\Untitled (1).png" alt="img1"></i></a>
+<a href="#" class="icon"><i class="fa-brands fa-linkedin-in"><img src="/PT\images (3).png" alt="img2"><i><a>
+<div>
+
+
+</body>
+</html>
