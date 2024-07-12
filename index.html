@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAHUL's Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.container1 {
+  background-color: black;
+  border-radius: 30px;
+  width: 25%;
+  float: left;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed; /* Fixed positioning */
+  top: 0px; /* Stay at the top of the document */
+  left: 0; /* Left alignment */
+  height: 100%; /* Full height */
+  background-color: #040404; /* Light gray background */
+  padding: 20px; /* Add padding */
+
+}
+
+.right-column {
+      width: 70%;
+      width: 1025px;
+      float: right;
+      background-color: white;
+      height: 550px;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      overflow-y: auto;
+      border-radius: 10px;
+      flex-direction: column;
+      left: 408px; /* Left alignment */
+      height: 90%; /* Full height */
+      overflow-x: auto; /* Add horizontal scroll if needed */
+      padding: 20px; /* Add padding */
+      margin-top: 60px;
+        }
+
+header {
+  border-radius: 20px;
+    color: inherit;
+    background-color: #bed3f2;
+    color: #fff;
+    text-align: center;
+    width: 68%;
+    position: fixed; /* Fixed positioning */
+    top: 0px; /* Stay at the top of the document */
+    left: 423px;
+    height: 4%; 
+    padding: 20px; /* Add padding */
+    justify-items: center;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 20;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arr{
+  top: 70px;
+  left: 415px;
+  padding: 20px;
+  height: 250px;
+  width: 200px;
+  align-items: end;
+  background-color: white;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 250px;
+    background-color: black;
+    border-radius: 20px;
+    
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: auto;
+}
+p{
+    text-align:center;
+    margin: 0;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 97%;
+    left: 418px;
+    clear: both;
+    border-radius: 20px;
+    top: 94%;
+}
+.about_right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    position: relative;
+}
+img{
+    display: flex;
+    float: right;
+    width: 35%;
+}
+.circular_progress * {
+  font-family: Nunito, sans-serif;
+}
+
+.circular_progress .text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.circular_progress .responsive-cell-block {
+  min-height: 75px;
+}
+
+.circular_progress .responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.circular_progress .responsive-container-block.container {
+  max-width: 1200px;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.circular_progress .text-blk.section-headtext {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.circular_progress .text-blk.section-subheadtext {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 70px;
+  margin-left: 0px;
+  font-size: 20px;
+  color: #afb8ce;
+  line-height: 30px;
+  max-width: 730px;
+}
+
+.circular_progress .text-blk.card-head {
+  margin-top: 25px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: rgb(132, 132, 132);
+}
+
+.circular_progress .text-blk.card-text {
+  font-size: 18px;
+  color: #afb8ce;
+}
+
+.circular_progress .container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: block;
+}
+
+.circular_progress .circle-chart {
+  width: 200px;
+  height: 200px;
+}
+
+.circular_progress .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circular_progress .card .circle-chart__percent {
+  alignment-baseline: central;
+  text-anchor: middle;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.circular_progress .responsive-container-block.big-container {
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+}
+
+.circular_progress .responsive-cell-block.wk-desk-3.wk-ipadp-3.wk-tab-6.wk-mobile-12 {
+  width: 300px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+
+@media (max-width: 1024px) {
+  .circular_progress .responsive-cell-block.wk-desk-3.wk-ipadp-3.wk-tab-6.wk-mobile-12 {
+    width: 310px;
+  }
+}
+
+@media (max-width: 768px) {
+  .circular_progress .responsive-cell-block.wk-desk-3.wk-ipadp-3.wk-tab-6.wk-mobile-12 {
+    width: 300px;
+  }
+
+  .circular_progress .text-blk.section-headtext {
+    font-size: 30px;
+  }
+
+  .circular_progress .text-blk.section-subheadtext {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+  }
+
+  .circular_progress .text-blk.card-head {
+    font-size: 20px;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .circular_progress .responsive-container-block.big-container {
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+  }
+
+  .circular_progress .responsive-cell-block.wk-desk-3.wk-ipadp-3.wk-tab-6.wk-mobile-12 {
+    width: 100%;
+  }
+
+  .circular_progress .text-blk.section-headtext {
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+  }
+
+  .circular_progress .text-blk.section-subheadtext {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  .circular_progress .text-blk.card-text {
+    font-size: 17px;
+  }
+
+  #fullscreen-image-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 40%;
+			height: 40%;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: none;
+			z-index: 1000;
+      display: none;
+		}
+		
+		#fullscreen-image {
+			position: fixed;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 40%;
+			max-height: 40%;
+			cursor: pointer;
+		}
+
+}
+
+    </style>
+</head>
+<body>
+
+  <section  class="container1">
+    <div>  
+    
+
+        <div style="width: auto; background-color: #040404;">
+            <p>
+              <img src="PT/Screenshot 2024-07-10 222643.png" alt="MY PICTURE"  style="width: 351px;"><br><br><br>
+              <h1 style="color: aliceblue;">Hii all i'm RAHUL RATHORE</h1>
+              <br>
+          </p>
+              <p style="color: rgb(190, 190, 190);">Innovative and detail-oriented B. Tech pursuing in Computer Science and
+                  Engineering with a specialization in Artificial Intelligence, Machine Learning,
+                  and the Internet of Things. Demonstrated expertise in web developing and
+                  deploying AI/ML models and loT solutions
+                  <br><br>
+                  <p style="color: azure;">FULL STACK / IOT DEVELOPER</p><br>
+                  <p style="color: azure;">DATA   ANALYST</p><br><br>
+              </p>
+              <div>
+                <button style="  color: white; width: 150px; height: 35px; background-color: rgb(40, 43, 34); border-radius: 10px;"><a href="#contact">CONTACT ME</a></button>
+                <button style="color: white; width: 150px; height: 35px; background-color: rgb(40, 43, 34); border-radius: 10px;"><a href="#resume"> SEE MY RESUME</a></button>
+              </div>
+          </div>
+      </div>
+  </section>
+    <header id="about">
+        <nav>
+            <img >
+            <ul>
+              <li><a href="#about" id="about-link">about</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="right-column" >
+    
+      <section id="skills" >
+            
+            <div class="circular_progress">
+                <h1>SKILLS</h1><br><br>
+                    <div class="responsive-container-block">
+                      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                        <div class="card">
+                        
+                        <img src="PT/images (1).png" alt="HTML IMG">
+                          <p class="text-blk card-head">
+                            HTML 5
+                          </p>
+                          <p class="text-blk card-text">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                          </p>
+                        </div>
+                      </div>
+                      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                        <div class="card">
+                            <img  src="PT/images (3).png" alt="CSS IMG">
+                          <p class="text-blk card-head">
+                            CSS
+                          </p>
+                          <p class="text-blk card-text">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                          </p>
+                        </div>
+                      </div>
+                      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                        <div class="card">
+                            <img src="PT/download (2).png"  alt="PYTHON IMG">
+                          <p class="text-blk card-head">
+                            PYTHON
+                          </p>
+                          <p class="text-blk card-text">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                          </p>
+                        </div>
+                      </div>
+                      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                        <div class="card">
+                            <img  src="PT/images (2).png"  alt="SQL IMG">
+                          <p class="text-blk card-head">
+                            SQL
+                          </p>
+                          <p class="text-blk card-text">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                          </p>
+                        </div>
+                      </div>
+                      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                        <div class="card">
+                            <img src="PT/download (4).png"  alt="PHP IMG">
+                          <p class="text-blk card-head">
+                            PHP
+                          </p>
+                          <p class="text-blk card-text">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                          </p>
+                        </div>
+                      </div>
+                      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                        <div class="card">
+                            <img src="PT/download (6).png" alt="JAVA IMG">
+                          <p class="text-blk card-head">
+                            JAVA
+                          </p>
+                          <p class="text-blk card-text">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                          </p>
+                        </div>
+                      </div>
+                      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                        <div class="card">
+                            <img src="PT/images.jpeg" alt="AI IMG">
+                          <p class="text-blk card-head">
+                            ARTIFICIAL Intelligence
+                          </p>
+                          <p class="text-blk card-text">
+                            Lorem ipsum dolor sit amet, consectetur adip iscing elit,
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </section>
+        
+        <section id="projects" >
+            
+            <div class="circular_progress">
+              <h1>PROJECTS</h1><br>
+              <h3>IOT PROJECTS</h3><br>
+                <div class="responsive-container-block">
+
+                  <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                    <div class="card">
+                    <p class="text-blk card-head">
+                      HEALTH CARE MONITORING<br>SYSTEM
+                      </p>
+                      <img alt="PROJECT 1">
+                      <p class="text-blk card-text">
+                        A healthcare monitoring system is designed to continuously observe and analyze the health status of individuals. It typically employs a combination of hardware and software to collect data on various physiological parameters such as heart rate, blood pressure, temperature, glucose levels, and oxygen saturation. These systems can be used in hospitals, clinics, and homes, providing real-time monitoring and alerting healthcare professionals or patients to any abnormalities </p>
+                    </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                    <div class="card">
+                        <p class="text-blk card-head">
+                            SMART CART
+                          </p>
+                          <img alt="PROJECT 2">
+                          <p class="text-blk card-text">
+                            A smart shopping cart is an innovative retail technology designed to enhance the shopping experience by integrating advanced features directly into the cart. These features aim to provide convenience, improve efficiency, and offer personalized shopping experiences for customers.
+                          </p>
+                        </div>
+                  </div>
+                  <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                    <div class="card">
+                        <p class="text-blk card-head">
+                            SMART PARKING SYSTEM
+                          </p>
+                          <img alt="PROJECT 3">
+                          <p class="text-blk card-text">
+                            A smart parking system is an advanced solution designed to improve the efficiency and convenience of parking management. It leverages technology to provide real-time information about parking availability and streamline the parking process for both drivers and parking facility operators.
+                          </p>
+                        </div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+              <h3>WEBSITE APLICATION</h3>
+              <div class="circular_progress">
+                <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12">
+                  <div class="card">
+                      <p class="text-blk card-head">
+                          SHOPING WEBSITE
+                        </p>
+                        <img alt="PROJECT 4">
+                        <p class="text-blk card-text">
+                          A shopping website integrated with a smart shopping cart for a mall offers a seamless, enhanced shopping experience by combining online and in-store functionalities. Here's a brief description:
+                        </p>
+                      </div>
+                </div>
+              </div>
+        </section>
+        <section id="resume" >
+            <h2>Resume</h2>
+            <a href="resume.pdf" download>Download Resume</a>
+        </section>
+        <section id="contact" >
+            <h2>Contact Me</h2><br>
+            <p style="color: aquamarine;">Linkedin :<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"> rahulrathore39769</a></p>
+            <br>
+            <p style="color: aquamarine;">Email: <a href="mailto:saad@example.com">rahulrathore39769@gmail.com</a></p><br>
+            <p style="color: aquamarine;">Phone: 7505238914</p><br>
+            <p style="color: aquamarine;">instagram : <a >my instagram</a></p>
+          </section>
+          <footer>
+            <p>&copy; 2023 RATHORE</p>
+        </footer>
+    </main>
+    
+    <script>
+      document.getElementById('about-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('fullscreen-image-container').style.display = 'block';
+        setTimeout(function() {
+          document.getElementById('fullscreen-image-container').style.display = 'none';
+        }, 500); // hide after 1 second
+      });
+    </script>
+
+</body>
+</html> 
+
