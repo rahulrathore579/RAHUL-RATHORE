@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAHUL's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <section  class="container1">
+    <div>  
+    
+
+        <div style="width: auto; background-color: #040404;">
+            <p>
+              <img src="PT/Screenshot 2024-07-10 222643.png" alt="MY PICTURE"  style="width: 351px;"><br><br><br>
+              <h1 style="color: aliceblue;">Hii all i'm RAHUL RATHORE</h1>
+              <br>
+          </p>
+              <p style="color: rgb(190, 190, 190);">Innovative and detail-oriented B. Tech pursuing in Computer Science and
+                  Engineering with a specialization in Artificial Intelligence, Machine Learning,
+                  and the Internet of Things. Demonstrated expertise in web developing and
+                  deploying AI/ML models and loT solutions
+                  <br><br>
+                  <p style="color: azure;">FULL STACK / IOT DEVELOPER</p><br>
+                  <p style="color: azure;">DATA   ANALYST</p><br><br>
+              </p>
+              <div>
+                <button style="  color: white; width: 150px; height: 35px; background-color: rgb(40, 43, 34); border-radius: 10px;"><a href="#contact">CONTACT ME</a></button>
+                <button style="color: white; width: 150px; height: 35px; background-color: rgb(40, 43, 34); border-radius: 10px;"><a href="#resume"> SEE MY RESUME</a></button>
+              </div>
+          </div>
+      </div>
+  </section>
+    <header id="about">
+        <nav>
+            <img >
+            <ul>
+              <li><a href="#about" id="about-link">about</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="right-column" >
+        <section id="resume" >
+            <h2>Resume</h2>
+            <a href="resume.pdf" download>Download Resume</a>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 RATHORE</p>
+        </footer>
+    </main>
+    
+    <script>
+      document.getElementById('about-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('fullscreen-image-container').style.display = 'block';
+        setTimeout(function() {
+          document.getElementById('fullscreen-image-container').style.display = 'none';
+        }, 500); // hide after 1 second
+      });
+    </script>
+
+</body>
+</html> 
+
