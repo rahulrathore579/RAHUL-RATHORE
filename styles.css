@@ -94,7 +94,7 @@ section {
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     top: 250px;
-    background-color: black;
+    background-color: rgb(242, 244, 246);
     border-radius: 20px;
     height: 90%;
     
@@ -148,6 +148,25 @@ img{
     float: right;
     width: 35%;
 }
+
+.social-links {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+  align-items: center;
+}
+
+.social-links a:hover {
+  color: #777;
+}
+
 .circular_progress * {
   font-family: Nunito, sans-serif;
 }
